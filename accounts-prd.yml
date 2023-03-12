@@ -1,13 +1,16 @@
 server:
-  port: 8081
+  port: 8071
 
 
 accounts:
   msg: Welcome to the EazyBank Accounts Prod application
-  build-version: 2
+  build-version: 3
   mailDetails:
-    hostName: prod-accounts@eazybytes.com
+    hostName: Prod-accounts@eazybytes.com
+    port: 9000
+    from: Prod-accounts@eazybytes.com
+    subject: our Account Details from Eazy Bank Prod Environment
   activeBranches:
-    - "Alberta"
-    - "Manitoba"
-    - "Toronto"
+    - "Mumbai"
+    - "London"
+    - "Washington"

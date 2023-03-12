@@ -2,7 +2,7 @@ server:
   port: 7070
 
 loans:
-  msg: Welcome to the EazyBank Loan Default application
+  msg: Welcome to the EazyBank Loan dev application
   build-version: 5
   mailDetails:
     hostName: dev-loans@eazybytes.com
