@@ -13,6 +13,15 @@ spring:
     console:
       enabled: true
 
+eureka:
+  instance:
+    preferIpAddress: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:6060/eureka/
+
 accounts:
   msg: Welcome to the EazyBank Accounts Default application
   build-version: 3
@@ -25,3 +34,19 @@ accounts:
     - "Mumbai"
     - "London"
     - "Washington"
+
+  info:
+    app:
+      name: Account Microservice
+      description: Easy Bank Account Application
+      version: 1.0.0
+
+endpoints:
+  shutdown:
+    enabled: true
+
+management:
+  endpoints:
+    shutdown:
+      enabled: true
+
